@@ -44,10 +44,6 @@ public abstract class TableDrawer {
                 table.applyToCell(VERTICAL_CENTER.withHeight(1)).applyToCell(HORIZONTAL_CENTER.withWidth(3));
             }
         }
-
-
-
-
         GridTable g = table.toGrid();
         g = Border.of(Border.Chars.of('+', '-', '|')).apply(g);
         Util.print(g);
